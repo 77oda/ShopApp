@@ -19,7 +19,7 @@ class CartScreen extends StatelessWidget {
           return ShopCubit.get(context).cartModel.data!.cartItems.length == 0 ?  Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Icon(Icons.shopping_bag_outlined,size: 70,color: Colors.greenAccent,),
                 SizedBox(height: 10,),
                 Text('Your Cart is empty',style: TextStyle(fontWeight: FontWeight.bold),),
@@ -53,7 +53,7 @@ class CartScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 15,),
                       Row(
-                        children: [
+                        children: const [
                           Text('Shipping Fee'),
                           Spacer(),
                           Text('Free',style: TextStyle(color: Colors.green),)
@@ -170,7 +170,7 @@ class CartScreen extends StatelessWidget {
                       ShopCubit.get(context).changeToFavorite(model.product!.id);
                     },
                     child: Row(
-                      children: [
+                      children: const [
                         Icon(Icons.favorite_border_rounded,color: Colors.grey,size: 18,),
                         SizedBox(width: 2.5,),
                         Text('Move to Wishlist',style: TextStyle(color: Colors.grey,fontSize: 13,),),
@@ -185,7 +185,7 @@ class CartScreen extends StatelessWidget {
                       ShopCubit.get(context).ChangeToCart(model.product!.id);
                     },
                     child: Row(
-                      children: [
+                      children: const [
                         Icon(Icons.delete_outline_outlined,color: Colors.grey,size: 18,),
                         SizedBox(width: 2.5,),
                         Text('Remove',style: TextStyle(color: Colors.grey,fontSize: 13,)),

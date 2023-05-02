@@ -12,7 +12,6 @@ import 'package:shop/shared/constants.dart';
 
 TextEditingController emailController = TextEditingController();
 TextEditingController passwordController = TextEditingController();
-bool hidePassword  = true;
 var loginFormKey = GlobalKey<FormState>();
 
 class LoginScreen extends StatelessWidget {
